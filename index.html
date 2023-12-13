@@ -8,11 +8,34 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Shruti Tutorials</title>
+
+    <style>
+        section{
+            min-height: 1000px;
+            overflow: hidden;
+            position: relative;
+            padding: 90px 10px 0px;
+        }
+        section:nth-child(even){
+            background-color: #ccc;
+        }
+        #home {
+            background: url(images/home-image-1.jpg) no-repeat center center fixed;
+        }
+        
+        #home > div {
+            background-color: rgba(221, 221, 205, 0.72);
+            border-radius: 10px;
+        }
+
+    </style>
+
+
   </head>
 
   <body>
 
-    <nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-sm sticky-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNav"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="topNav">
@@ -26,11 +49,32 @@
             </div>
             
         </div>
-
-
     </nav>
 
+    <header class="section">
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Shruti Tutorials</h1>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. </p>
+                <p><a href="#about" class="btn btn-primary">Learn more about us!!</a></p>
+            </div>
+        </div>
+    </header>
 
+    <section class="section" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="h2">Welcome to Shruti's Tutorials</div>
+                    <p>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                </div>
+                <div class="col">
+                    <img src="images/home_2.jpg" class="img-fluid">
+                </div>
+                
+            </div>
+        </div>
+    </section>
 
 
 
